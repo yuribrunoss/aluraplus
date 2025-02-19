@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul:       #167bf7;
+    --cor-de-fundo:     #00030C;
+    --fonte-principal:  'Inter', serif;  
+    
+}
+
+* {                                                             /* Resetando as margens e paddings dos elementos com essa tag global */
+
+    margin: 0;                                                  /* Informando que não queremos margem */
+    padding: 0;                                                 /* Informando que não queremos padding */
+    border: 0;                                                  /* Informando que não queremos borda */
+    
+}/* Isso é útil para garantir que o layout da página fique mais alinhado e consistente, sem espaços indesejados ao redor dos elementos. */
+
+body {
+
+    background-color: var(--cor-de-fundo);                      /* Informando a cor de fundo da página */
+    color: var(--branco-principal);                             /* Informando a cor do texto da página */
+    font-family: var(--fonte-principal);                        /* Informando a fonte padrão da página */
+    font-size: 16px;                                            /* Informando o tamanho da fonte da página */
+    font-weight: 400;                                           /* Informando o peso da fonte da página */
+}
+
+
+.principal {                    
+
+    background-image: url("../assets/Background.png");          /* Informando o caminho da img para utilizar de fundo da page */
+    background-repeat: no-repeat;                               /* Informando que não desejamos que se repita essa img */
+    background-size: contain;                                   /* Informando que a img séra redimensionnada para caber dentro do elemento I */
+    align-items: center;                                        /* Informando que o conteúdo do elemento será centralizado */
+    text-align: center;                                         /* Informando que o texto do elemento será centralizado */
+
+}
+
+.container {
+
+    height: 100vh;                                              /* Informando que o elemento ocupe toda a altura da tela do dispositivo */
+    display: grid;                                              /* Informando que o elemento será exibido como grid */
+    grid-template-columns: 50% 50%;                             /* Informando que o grid terá duas colunas com 50% de largura cada */
+    
+}
+
+.container__caixa{
+    
+    margin: 0 6em;                                              /* Informando o espaçamento do elemento */
+
+}
+
+.container__titulo{
+
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+.container__imagem {
+
+    margin: 1em 0 2em 0;                                        /* Informando o espaçamento do elemento */
+
+}
+
+.container__botao {
+
+    background-color: var(--botao-azul);                        /* Informando a cor de fundo do botão */
+    color: var(--branco-principal);                             /* Informando a cor do texto do botão */
+    
+    border-radius: 5px;                                         /* Informando que queremos bordas arredondadas no botão */
+    padding: 1em;                                               /* Informando o espaçamento interno do botão */
+    display: block;                                             /* Informando que o botão será exibido como bloco */
+    text-decoration: none;                                      /* Informando que não queremos decoração no texto do botão */
+    margin-bottom: 1em;                                         /* Informando o espaçamento do elemento */
+    
+    cursor: pointer;                                            /* Informando que o cursor do mouse será uma mãozinha ao passar por cima do botão */
+
+}
+
+.container__aviso{
+    
+    font-size: 12px;
+    
+    color: var(--cinza-secundario);
+
+}
+
+
+
+.secundario {
+    
+    align-items: center;
+    margin: 0 10em;
+    
+}
+
+.secundario__imagem {
+    
+    width: 80%;
+    
+}
+
+.secundario__botao {
+    
+    display: inline-block;                                      /* Informando que o botão será exibido como inline-block */
+    margin-top: 1em;                                            /* Informando o espaçamento do elemento */
+
+}
+
+.botao__secundario {
+
+    background-color: transparent;                              /* Informando a cor de fundo do elemento secundário */
+    border: 2px solid var(--branco-principal);                  /* Informando que queremos uma borda de 2px sólida na cor branca */
+
+
+}
+
+.descricao__titulo {
+
+    font-weight: 700;
+    font-size: 48px;
+    
+    color: var(--branco-principal);
+    
+    margin-bottom: 0.1em;
+
+}
+
+.descricao__texto {
+
+    color: var(--cinza-secundario);
+
+} 
+
+.container_descricao {
+
+    padding: 2em;
+}
